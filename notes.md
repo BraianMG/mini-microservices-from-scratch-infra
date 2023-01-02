@@ -34,6 +34,14 @@ By default, Kubernetes creates a service of __type ClusterIP__, So it is not nec
 - __Load Balancer__: Makes a pod accessible from _outside the cluster_. This is the right way to expose a pod to the outside world.
 - __External Name__: Redirects an in-cluster request to CNAME url.
 
+### Load Balancer Service
+Tells Kubernetes to reach out to its provider and provision a load balancer. Gets traffic in to a _single pod_.
+
+There is something that is also very closely related that is referred to as __Ingress__ or an __Ingress Controller__
+- __Ingress__ or __Ingress Controller__: A pod with a set of routing rules to distribute traffic to other services.
+- __Egress__ or __Egress Controller__: ....
+- __Ingress-Nginx__: [https://kubernetes.github.io/ingress-nginx/deploy/](https://kubernetes.github.io/ingress-nginx/deploy/)
+
 ## __YAML Files__
 - __To coments lines__: `# Your comment`
 - __Separator to create multiple objects within the same file__: `---`

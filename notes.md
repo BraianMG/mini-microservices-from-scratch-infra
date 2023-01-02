@@ -28,7 +28,12 @@ Docker is a platform or ecosystem around creating and running containers (Docker
 __Deployments__, __pods__ and __services__ are called objects in Kubernetes.
 
 ### Types of Services
+By default, Kubernetes creates a service of __type ClusterIP__, So it is not necessary to indicate the type when we create a ClusterIP type service.
 - __Cluster IP__: Sets up an easy-to-remember URL to access a pod. Only exposes pods _in the cluster_.
 - __Node Port__: Makes a pod accessible from _outside the cluster_. Usually only used for dev purposes.
 - __Load Balancer__: Makes a pod accessible from _outside the cluster_. This is the right way to expose a pod to the outside world.
 - __External Name__: Redirects an in-cluster request to CNAME url.
+
+## __YAML Files__
+- __To coments lines__: `# Your comment`
+- __Separator to create multiple objects within the same file__: `---`

@@ -15,6 +15,8 @@
 - Deletes the given pod: `kubectl delete pod [pod_name]`
 - Tells kubernetes to process the config: `kubectl apply -f [config file name]`
 - Print out some information about the running pod: `kubectl describe pod [pod_name]`
+- Execute a console in a running pod: `kubectl exe -it [pod_name] sh`
+  - To exit the console: `exit`
 
 ### Deployment Commands
 - List all the running deployments: `kubectl get deployments`

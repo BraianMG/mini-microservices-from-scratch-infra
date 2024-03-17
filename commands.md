@@ -24,9 +24,7 @@
 - Create a deployment out of a config file: `kubectl apply -f [config file name]`
 - Delete a deployment: `kubectl delete deployment [depl name]`
 
-
-
-### Updating the image used by a Deployment (recomended method)
+## Updating the image used by a Deployment (recomended method)
 - The deployment must be using the 'latest' tag in the pod spec section, for example:
   - `image: cursomicroservicios/posts:latest`
   - `image: cursomicroservicios/posts`
@@ -34,3 +32,6 @@
 - Build the image: `docker build -t [name] [dir]`
 - Push the image to docker hub: `docker push [name]`
 - Run the command: `kubectl rollout restart deployment [depl_name]`
+
+## Ingress service
+For __ingress-srv__ to work correctly, follow the following ingress installation guide: `https://kubernetes.github.io/ingress-nginx/deploy/`
